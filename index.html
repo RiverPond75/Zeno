@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Handling Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Handling Application</h1>
+        
+        <div class="section">
+            <h2>Data Share</h2>
+            <textarea id="shareData" placeholder="Enter data to share"></textarea>
+            <button id="shareBtn">Share Data</button>
+            <div id="shareResult" class="result"></div>
+        </div>
+        
+        <div class="section">
+            <h2>Data Store</h2>
+            <textarea id="storeData" placeholder="Enter data to store"></textarea>
+            <button id="storeBtn">Store Data</button>
+            <div id="storeResult" class="result"></div>
+        </div>
+        
+        <div class="section">
+            <h2>Stored Data</h2>
+            <button id="refreshBtn">Refresh Data</button>
+            <button id="downloadBtn">Download Data</button>
+            <div id="storedData" class="data-display"></div>
+        </div>
+        
+        <div class="section">
+            <h2>Data Send</h2>
+            <input type="email" id="emailInput" placeholder="Recipient email">
+            <textarea id="sendData" placeholder="Data to send"></textarea>
+            <button id="sendBtn">Send Data</button>
+            <div id="sendResult" class="result"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
