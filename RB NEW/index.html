@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rezyme - Build your resume with ease</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #faf9f6;
+            font-family: 'Inter', Arial, sans-serif;
+            color: #232323;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            width: 100%;
+            background: #fff;
+            box-shadow: 0 1px 8px rgba(0, 0, 0, 0.03);
+            padding: 18px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .header-content {
+            width: 100%;
+            max-width: 420px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 24px;
+        }
+
+        .logo {
+            font-weight: 600;
+            letter-spacing: 2px;
+            font-size: 1.1rem;
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .auth-buttons button {
+            padding: 6px 16px;
+            font-size: 0.95rem;
+            border-radius: 6px;
+            border: 1px solid #d1d5db;
+            background: #fff;
+            color: #232323;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .auth-buttons .signup {
+            background: #1a3665;
+            color: #fff;
+            border: none;
+        }
+
+        main {
+            flex: 1 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05);
+            max-width: 420px;
+            width: 100%;
+            padding: 48px 32px 40px 32px;
+            margin: 32px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main-title {
+            text-align: center;
+            font-size: 2.1rem;
+            font-weight: 700;
+            margin: 0 0 18px 0;
+            line-height: 1.15;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #555;
+            font-size: 1.05rem;
+            margin-bottom: 32px;
+        }
+
+        .get-started {
+            padding: 14px 0;
+            width: 100%;
+            background: #1a3665;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.15rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .get-started:hover {
+            background: #294a82;
+        }
+
+        footer {
+            width: 100%;
+            background: #f3f3f3;
+            padding: 18px 0 10px 0;
+            text-align: center;
+            font-size: 0.96rem;
+            color: #888;
+            border-top: 1px solid #e5e5e5;
+            flex-shrink: 0;
+        }
+
+        .footer-links {
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #1a3665;
+            text-decoration: none;
+            font-size: 0.97rem;
+            transition: text-decoration 0.2s;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 500px) {
+
+            .header-content,
+            .card {
+                max-width: 98vw;
+                padding-left: 4vw;
+                padding-right: 4vw;
+            }
+
+            .main-title {
+                font-size: 1.3rem;
+            }
+
+            .subtitle {
+                font-size: 0.97rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <span class="logo">REZYME</span>
+            <div class="auth-buttons">
+                <button>Log in</button>
+                <button class="signup">Sign up</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="card">
+            <div class="main-title">
+                Build your<br>resume with<br>ease
+            </div>
+            <div class="subtitle">
+                Create a professional resume<br>
+                quickly and easily with our resume builder.
+            </div>
+            <button class="get-started" onclick="window.location.href='select-resume.html'">Get Started</button>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+        </div>
+        &copy; 2025 Rezyme. All rights reserved.
+    </footer>
+</body>
+
+</html>
